@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+
+a {
+    color: green
+}
+
+#link {
+    color: red;
+}
+
+#second-div > p {
+    color: blue;
+}
+
+#second-div > p:nth-child(even) {
+    color: red;
+}
+
+.novi::before {
+    color: yellow;
+    content: "NEW!";
+}
+
+#italic:hover {
+    font-style: italic;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" id="link" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2 <span class="novi"></p></span>
+        <p>Paragraph 3 <span class="novi"></p></span>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+        </div>
+    </div>
+    <p>Paragraph 9</p>
+    <p id="italic">Paragraph 10</p>
+</body>
+
+</html>
